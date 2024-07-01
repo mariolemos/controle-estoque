@@ -10,7 +10,7 @@ public class Empresa {
 
     @Id
     @GeneratedValue(strategy =  GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     private String razaoSocial;
     @Column(unique = true)
@@ -23,7 +23,7 @@ public class Empresa {
     private List<Produto> produtos;
 
 
-    public Empresa(int id, String razaoSocial, String cnpj, List<Cliente> clientes, List<Fornecedor> fornecedors, List<Produto> produtos) {
+    public Empresa(Long id, String razaoSocial, String cnpj, List<Cliente> clientes, List<Fornecedor> fornecedors, List<Produto> produtos) {
         this.id = id;
         this.razaoSocial = razaoSocial;
         this.cnpj = cnpj;
@@ -32,11 +32,11 @@ public class Empresa {
         this.produtos = produtos;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
