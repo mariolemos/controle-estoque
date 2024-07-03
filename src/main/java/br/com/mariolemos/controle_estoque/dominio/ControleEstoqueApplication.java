@@ -1,4 +1,4 @@
-package br.com.mariolemos.controle_estoque;
+package br.com.mariolemos.controle_estoque.dominio;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

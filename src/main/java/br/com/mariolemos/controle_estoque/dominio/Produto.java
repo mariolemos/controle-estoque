@@ -1,4 +1,4 @@
-package dominio;
+package br.com.mariolemos.controle_estoque.dominio;
 
 import jakarta.persistence.*;
 

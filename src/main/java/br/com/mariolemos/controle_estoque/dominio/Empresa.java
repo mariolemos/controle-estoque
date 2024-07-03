@@ -1,4 +1,4 @@
-package dominio;
+package br.com.mariolemos.controle_estoque.dominio;
 
 import jakarta.persistence.*;
 
@@ -21,6 +21,10 @@ public class Empresa {
     private List<Fornecedor> fornecedors;
     @OneToMany
     private List<Produto> produtos;
+
+    public Empresa(){
+
+    }
 
 
     public Empresa(Long id, String razaoSocial, String cnpj, List<Cliente> clientes, List<Fornecedor> fornecedors, List<Produto> produtos) {

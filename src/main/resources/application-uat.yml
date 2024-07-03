@@ -1,13 +1,13 @@
 spring:
   server:
-    port: 8081
+    port: 3306
   datasource:
-    driver-class-name: org.h2.Driver
-    url: jdbc:h2:mem:sdw2023
-    username: sdw2023
-    password:
+    driver-class-name: mysql
+    url: jdbc:mysql://localhost:3306/controEstoque
+    username: root
+    password: 1234
   jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
+    database-platform: mysql-connector-java
     show-sql: true
     open-in-view: false
     hibernate:
